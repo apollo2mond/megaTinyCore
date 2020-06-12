@@ -2,7 +2,7 @@
 * printf options, only support base10/without div for base10, without float support
 * fast digital read/write()
 * add idleDelay(), sleepDelay()
-* ~~shift option, unroll loop~~
+* ~~shift option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
 * shift io-access based on vport
 * new shift() based on bit change detection and toggle
 * deepSleepPort(), disable dedicated pull-up and digital input buffer
