@@ -1,4 +1,4 @@
-## Todo list
+## Todo
 * printf options, only support base10, without float support, without div for base10 
 * fast digital write/read()
 * add idleDelay(), sleepDelay()
