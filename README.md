@@ -1,6 +1,7 @@
 ## Todo list
-* printf options, only support base10, without div for base10 
-* add idleDay(), sleepDelay()
+* printf options, only support base10, without float support, without div for base10 
+* fast digital write/read()
+* add idleDelay(), sleepDelay()
 * shift option, unroll loop
 * new shift() based on bit change detection and toggle
 * deepSleepPort(), disable dedicated pull-up and digital input buffer
