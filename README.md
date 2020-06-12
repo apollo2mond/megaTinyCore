@@ -1,3 +1,11 @@
+## Todo list
+* printf options, only support base10, without div for base10 
+* add idleDay(), sleepDelay()
+* shift option, unroll loop
+* new shift() based on bit change detection and toggle
+* deepSleepPort(), disable dedicated pull-up and digital input buffer
+
+
 [![Join the chat at https://gitter.im/SpenceKonde/megaTinyCore](https://badges.gitter.im/SpenceKonde/megaTinyCore.svg)](https://gitter.im/SpenceKonde/megaTinyCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
