@@ -39,7 +39,7 @@ uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder) {
 }
 
 void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val) {
-	for (uint8_t i = 0; i != 8; i++)
+	for (uint8_t i = 0; i != 8; i++) {
 
 		if (bitOrder == LSBFIRST)
 			digitalWrite(dataPin, val & 0x01), val >>= 1;
