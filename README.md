@@ -1,6 +1,6 @@
 ## Todo
-* printf options, only support base10, without float support, without div for base10 
-* fast digital write/read()
+* printf options, only support base10/without div for base10, without float support
+* fast digital read/write()
 * add idleDelay(), sleepDelay()
 * shift option, unroll loop
 * new shift() based on bit change detection and toggle
