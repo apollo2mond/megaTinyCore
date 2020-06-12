@@ -4,7 +4,7 @@
 * wdtDelay(), idleDelay(), sleepDelay()
 * ~~shift() option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
 * shift(), fast io-access based on vport
-* shift(), based on bit change detection and toggle
+* shift(), with bit change detection and toggle
 * deepSleepPort(), disable dedicated pull-up and digital input buffer
 * ws2812 hw driver based on AN1606, using 2xclc+spi+tcb/pwm
 * owi hw driver, using uart/half-duplex + adapted fsm+gpiorX flags
