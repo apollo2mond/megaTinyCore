@@ -23,30 +23,29 @@
 #include <Arduino.h>
 
 uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder) {
-	uint8_t value = 0;
-	uint8_t i;
+	uint8_t val = 0;
 
-	for (i = 0; i < 8; ++i) {
+	for (uint8_t i = 0; i != 8; i++) {
 		digitalWrite(clockPin, HIGH);
+		
 		if (bitOrder == LSBFIRST)
-			value |= digitalRead(dataPin) << i;
+			val = (val>>1) |  (digitalRead(dataPin) << 7);
 		else
-			value |= digitalRead(dataPin) << (7 - i);
+			val = (val<<1) | digitalRead(dataPin);
+		
 		digitalWrite(clockPin, LOW);
 	}
-	return value;
+	return val;
 }
 
-void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val)
-{
-	uint8_t i;
+void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val) {
+	for (uint8_t i = 0; i != 8; i++)
 
-	for (i = 0; i < 8; i++)  {
 		if (bitOrder == LSBFIRST)
-			digitalWrite(dataPin, !!(val & (1 << i)));
-		else
-			digitalWrite(dataPin, !!(val & (1 << (7 - i))));
-
+			digitalWrite(dataPin, val & 0x01), val >>= 1;
+		else	
+			digitalWrite(dataPin, !!(val & 0x80)), val <<= 1;
+			
 		digitalWrite(clockPin, HIGH);
 		digitalWrite(clockPin, LOW);
 	}
