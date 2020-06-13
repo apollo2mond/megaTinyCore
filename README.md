@@ -1,6 +1,6 @@
 ## Todo
 * printf() options, only support base10/without div for base10, without float support
-* fast digitalRead/Write() based on vport
+* faster digitalRead/Write() based on vport/sbi/cbi
 * wdtDelay(), idleDelay(), sleepDelay()
 * ~~shift() option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
 * shift(), fast io-access based on vport
@@ -8,6 +8,9 @@
 * deepSleepPort(), disable dedicated pull-up and digital input buffer
 * ws2812 hw driver based on AN1606, using 2xclc+spi+tcb/pwm
 * owi hw driver, using uart/half-duplex + adapted fsm+gpiorX flags
+* analogRead(), offset/gain correction
+* valid pin check at compile time, or optional removable
+* touch support
 
 
 [![Join the chat at https://gitter.im/SpenceKonde/megaTinyCore](https://badges.gitter.im/SpenceKonde/megaTinyCore.svg)](https://gitter.im/SpenceKonde/megaTinyCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
