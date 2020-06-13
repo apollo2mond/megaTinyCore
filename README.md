@@ -1,5 +1,5 @@
 ### picoMegaTinyCore ###
-This version will be use more of the on chip HW to implemnt the core functions and tries to minimize the flash footprint via compile options to (in-)exclude the feature set that is really used by your application. This will cost some of the flexibility regarding the linkage of HW pin and selected function. New and improved features will be added as well.
+This version will use more of the on chip HW to implemnt the core functions and tries to minimize the flash footprint via compile options to (in-)exclude the features that are really used by your application. This will cost some of the flexibility because of the linkage between HW pin and selected function. New and improved features will be added as well.
 
 ## Todo
 * printf() options, only support base10/without div for base10, without float support
