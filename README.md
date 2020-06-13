@@ -11,6 +11,7 @@
 * valid pin check at compile time, or optional removable
 * touch support
 * eeRead/Write() with x100K write cycles, ring buffer based, enhanced endurance 
+* pulseIn() based on tmr capture
 
 
 [![Join the chat at https://gitter.im/SpenceKonde/megaTinyCore](https://badges.gitter.im/SpenceKonde/megaTinyCore.svg)](https://gitter.im/SpenceKonde/megaTinyCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
