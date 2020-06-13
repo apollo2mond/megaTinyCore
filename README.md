@@ -1,9 +1,8 @@
 ## Todo
 * printf() options, only support base10/without div for base10, without float support
-* faster digitalRead/Write() based on vport/sbi/cbi
-* wdtDelay(), idleDelay(), sleepDelay()
+* digitalRead/Write() based on vport/sbi/cbi
+* idleDelay()/sleepDelay() based on rtc tmr
 * ~~shift() option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
-* shift(), fast io-access based on vport
 * shift(), with bit change detection and toggle
 * deepSleepPort(), disable dedicated pull-up and digital input buffer
 * ws2812 hw driver based on AN1606, using 2xclc+spi+tcb/pwm
