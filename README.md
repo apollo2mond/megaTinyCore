@@ -5,7 +5,7 @@ This core version will use more of the on chip HW to implemnt the core functions
 * printf() options, support only base10/without div for base10, without float support
 * digitalRead/Write() based on vport/sbi/cbi
 * idleDelay()/sleepDelay() based on rtc tmr
-* ~~shift() option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
+~~* shift() option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
 * shift(), with bit change detection and toggle
 * deepSleepPort(), disable dedicated pull-up and digital input buffer
 * ws2812 hw driver based on AN1606, using 2xclc+spi+tcb/pwm
