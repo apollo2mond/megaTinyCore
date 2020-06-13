@@ -1,5 +1,5 @@
 ### picoMegaTinyCore ###
-This version will be use more of the on chip HW to implemnt the core functions and tries to minimize the flash footprint via compile options to (in-)exclude the feature set that is really used by your application. This will cost some of the flexibility regarding the linkage of HH pin and selected function. 
+This version will be use more of the on chip HW to implemnt the core functions and tries to minimize the flash footprint via compile options to (in-)exclude the feature set that is really used by your application. This will cost some of the flexibility regarding the linkage of HW pin and selected function. New and improved features will be added as well.
 
 ## Todo
 * printf() options, only support base10/without div for base10, without float support
@@ -11,10 +11,11 @@ This version will be use more of the on chip HW to implemnt the core functions a
 * ws2812 hw driver based on AN1606, using 2xclc+spi+tcb/pwm
 * owi hw driver, using uart/half-duplex + adapted fsm+gpiorX flags
 * analogRead(), offset/gain correction
-* valid pin check at compile time, or optional removable
-* touch support
+* valid pin check at compile time (assert), or optional removable
+* touchHW() support
 * eeRead/Write() with x100K write cycles, ring buffer based, enhanced endurance 
-* pulseIn() based on tmr capture
+* pulseInHW() based on tmr capture
+* toneHW(), tca/tcb/tcd output pins are supported
 
 
 [![Join the chat at https://gitter.im/SpenceKonde/megaTinyCore](https://badges.gitter.im/SpenceKonde/megaTinyCore.svg)](https://gitter.im/SpenceKonde/megaTinyCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
