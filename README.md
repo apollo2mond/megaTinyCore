@@ -2,7 +2,7 @@
 This version will use more of the on chip HW to implemnt the core functions and tries to minimize the flash footprint via compile options to (in-)exclude the features that are really used by your application. This will cost some of the flexibility because of the linkage between HW pin and selected function. New and improved features will be added as well.
 
 ## Todo
-* printf() options, only support base10/without div for base10, without float support
+* printf() options, support only base10/without div for base10, without float support
 * digitalRead/Write() based on vport/sbi/cbi
 * idleDelay()/sleepDelay() based on rtc tmr
 * ~~shift() option, unroll loop~~ #define _SHIFT_RX_UNROLL_LOOP/_SHIFT_TX_UNROLL_LOOP
