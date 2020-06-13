@@ -4,7 +4,7 @@
 
 ### **What is the EEPROM library.**
 
-Th EEPROM library provides an easy to use interface to interact with the internal non-volatile storage found on megaavr ATtiny and ATmega devicess. It was adapted for these devices by Spence Konde for distribution as part of megaTinyCore ( https://github.com/SpenceKonde/megaTinyCore ). The interface is fully compatible with the standard Arduino EEPROM.h library. EEPROM memory will retain it's stored data when the device is powered off. If the EESAVE bit in the SYSCFG0 fuse is set, it will retain it's values even if a UPDI programmer is used to issue a Chip Erase command, unless the part has been "locked" via the LOCKJBIT fuse, in which case the EEPROM is always cleared.
+The EEPROM library provides an easy to use interface to interact with the internal non-volatile storage found on megaavr ATtiny and ATmega devicess. It was adapted for these devices by Spence Konde for distribution as part of megaTinyCore ( https://github.com/SpenceKonde/megaTinyCore ). The interface is fully compatible with the standard Arduino EEPROM.h library. EEPROM memory will retain it's stored data when the device is powered off. If the EESAVE bit in the SYSCFG0 fuse is set, it will retain it's values even if a UPDI programmer is used to issue a Chip Erase command, unless the part has been "locked" via the LOCKJBIT fuse, in which case the EEPROM is always cleared.
 
 ### **Additional features when used with the megaavr devices**
 
